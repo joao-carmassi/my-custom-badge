@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { FormField } from '@/app/page';
 import Badge from '../Badge';
 import { motion } from 'framer-motion';
+import { formataLinkBadge } from '@/utils/formataLinkBagde';
 
 interface Props {
   badge: FormField;
@@ -24,9 +25,9 @@ const DisplayContent = ({ badge }: Props) => {
         } w-full flex px-5 py-3 rounded-t-xl justify-between`}
       >
         <div className="flex items-center gap-4">
-          <span className="block bg-red-400 rounded-full aspect-square w-4"></span>
-          <span className="block bg-yellow-400 rounded-full aspect-square w-4"></span>
-          <span className="block bg-green-400 rounded-full aspect-square w-4"></span>
+          <span className="block bg-red-400 rounded-full aspect-square w-4 animate-in fade-in duration-1000 delay-500 fill-mode-both"></span>
+          <span className="block bg-yellow-400 rounded-full aspect-square w-4 animate-in fade-in duration-1000 delay-700 fill-mode-both"></span>
+          <span className="block bg-green-400 rounded-full aspect-square w-4 animate-in fade-in duration-1000 delay-1000 fill-mode-both"></span>
         </div>
         <Button
           className={`${
@@ -47,13 +48,15 @@ const DisplayContent = ({ badge }: Props) => {
           tema === 'escuro' ? 'bg-secondary' : 'bg-card'
         } w-full h-58 rounded-b-xl grid place-items-center`}
       >
-        <motion.div
+        <motion.a
+          target="_blank"
+          href={formataLinkBadge(badge)}
           whileHover={{ scale: 1.2 }}
           onHoverStart={() => {}}
           onHoverEnd={() => {}}
         >
           <Badge badge={badge} />
-        </motion.div>
+        </motion.a>
       </div>
     </div>
   );
