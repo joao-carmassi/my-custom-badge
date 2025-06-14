@@ -56,7 +56,10 @@ const Buttons = ({ form }: Props) => {
           className="w-full"
           effect="ringHover"
           onClick={(e) =>
-            copyToClipboard(`<img src="${imageUrl}" alt="badge" />`, e)
+            copyToClipboard(
+              `<img src="${imageUrl}" alt="${form.text || form.label}" />`,
+              e
+            )
           }
         >
           Copy html
