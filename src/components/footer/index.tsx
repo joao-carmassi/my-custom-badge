@@ -4,7 +4,7 @@ import { Github } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="bg-card">
+    <footer className="bg-card px-6">
       <div className="max-w-7xl mx-auto">
         <div className="py-12 flex flex-col justify-start items-center">
           <h1 className="font-semibold mb-3 text-xl text-card-foreground/75">
@@ -17,7 +17,7 @@ const Footer = () => {
           </h2>
         </div>
         <Separator />
-        <div className="py-8 flex flex-col-reverse sm:flex-row items-center justify-between gap-x-2 gap-y-5 px-6 xl:px-0">
+        <div className="py-8 flex flex-row items-center justify-between gap-x-2 gap-y-5 px-6 xl:px-0">
           {/* Copyright */}
           <span className="text-foreground/75">
             Powered by{' '}
@@ -36,7 +36,10 @@ const Footer = () => {
               className="p-2.5 rounded-full"
               asChild
             >
-              <a href="#" target="_blank">
+              <a
+                href="https://github.com/joao-carmassi/my-custom-badge"
+                target="_blank"
+              >
                 <Github />
               </a>
             </Button>
@@ -48,4 +51,3 @@ const Footer = () => {
 };
 
 export default Footer;
-

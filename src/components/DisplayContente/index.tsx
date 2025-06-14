@@ -17,7 +17,7 @@ const DisplayContent = ({ badge }: Props) => {
   localStorage.setItem('tema', JSON.stringify(tema));
 
   return (
-    <div className="w-[25rem] max-w-full shadow-2xl rounded-xl">
+    <div className="w-full shadow-2xl rounded-xl">
       <div
         className={`${
           tema === 'escuro' ? 'bg-card' : 'bg-secondary'

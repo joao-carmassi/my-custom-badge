@@ -64,11 +64,12 @@ export default function Home() {
   if (!isReady) return null;
 
   return (
-    <section className="min-h-svh flex flex-col items-center justify-center gap-5 p-6">
+    <section className="min-h-svh flex flex-col items-center justify-center gap-5 py-6">
       <motion.div
         initial={{ opacity: 0, x: 60 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.4 }}
+        className="w-full max-w-[30rem] px-6"
       >
         <Form form={form} badge={badge} handleChange={handleChange} />
       </motion.div>
@@ -77,6 +78,7 @@ export default function Home() {
         initial={{ opacity: 0, x: -60 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.4, delay: 0.2 }}
+        className="w-full max-w-[30rem] px-6"
       >
         <DisplayContent badge={badge} />
       </motion.div>
@@ -85,4 +87,3 @@ export default function Home() {
     </section>
   );
 }
-

@@ -30,14 +30,15 @@ const Buttons = ({ form }: Props) => {
   };
 
   return (
-    <div className="grid grid-cols-2 md:grid-cols-3 gap-3 w-[25rem] max-w-full">
+    <div className="grid grid-cols-2 md:grid-cols-3 gap-3 w-full max-w-[30rem] px-6">
       <motion.div
+        className="w-full col-span-2 md:col-span-1"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.3, delay: 0.4 }}
       >
         <Button
-          className="w-full col-span-2 md:col-span-1"
+          className="w-full"
           effect="ringHover"
           onClick={(e) => copyToClipboard(imageUrl, e)}
         >
@@ -46,6 +47,7 @@ const Buttons = ({ form }: Props) => {
       </motion.div>
 
       <motion.div
+        className="w-full"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.3, delay: 0.5 }}
