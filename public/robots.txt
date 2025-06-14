@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://example.com
+Host: https://joao-carmassi.github.io/my-custom-badge/
 
 # Sitemaps
-Sitemap: https://example.com/sitemap.xml
+Sitemap: https://joao-carmassi.github.io/my-custom-badge/sitemap.xml
