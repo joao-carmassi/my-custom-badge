@@ -48,11 +48,13 @@ const Form = ({ form, badge, handleChange }: Props) => {
           />
         </div>
         <div className="col-span-1">
-          <Label
-            className="text-card-foreground/60 text-sm flex items-center justify-between"
-            htmlFor="icon"
-          >
-            Icon:{' '}
+          <div className="flex items-center justify-between">
+            <Label
+              className="text-card-foreground/60 text-sm flex items-center justify-between"
+              htmlFor="icon"
+            >
+              Icon
+            </Label>
             <Tooltip>
               <TooltipTrigger asChild>
                 <MessageCircleQuestion className="size-3.5 text-card-foreground/60" />
@@ -70,7 +72,7 @@ const Form = ({ form, badge, handleChange }: Props) => {
                 </p>
               </TooltipContent>
             </Tooltip>
-          </Label>
+          </div>
           <Input
             className="w-full"
             placeholder="Type a icon"
