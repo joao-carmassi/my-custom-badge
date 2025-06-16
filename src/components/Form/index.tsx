@@ -12,8 +12,8 @@ import {
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import Badge from '../Badge';
-import { Tooltip, TooltipContent, TooltipTrigger } from '../ui/tooltip';
 import { MessageCircleQuestion } from 'lucide-react';
+import { Popover, PopoverContent, PopoverTrigger } from '../ui/popover';
 
 interface Props {
   form: FormField;
@@ -55,11 +55,11 @@ const Form = ({ form, badge, handleChange }: Props) => {
             >
               Icon
             </Label>
-            <Tooltip>
-              <TooltipTrigger asChild>
+            <Popover>
+              <PopoverTrigger>
                 <MessageCircleQuestion className="size-3.5 text-card-foreground/60" />
-              </TooltipTrigger>
-              <TooltipContent>
+              </PopoverTrigger>
+              <PopoverContent className="bg-primary text-background">
                 <p>
                   Copy the icon names from the website{' '}
                   <a
@@ -70,8 +70,8 @@ const Form = ({ form, badge, handleChange }: Props) => {
                     simpleicons.org
                   </a>
                 </p>
-              </TooltipContent>
-            </Tooltip>
+              </PopoverContent>
+            </Popover>
           </div>
           <Input
             className="w-full"
