@@ -57,7 +57,7 @@ const Form = ({ form, badge, handleChange }: Props) => {
             </Label>
             <Popover>
               <PopoverTrigger>
-                <MessageCircleQuestion className="size-3.5 text-card-foreground/60" />
+                <MessageCircleQuestion className="size-3.5 text-card-foreground/60 hover:scale-110 hover:text-primary duration-200" />
               </PopoverTrigger>
               <PopoverContent className="bg-primary text-background">
                 <p>
