@@ -31,7 +31,3 @@ See exactly how your badge looks against different backgrounds (white or black).
 ## 🙏 Credits
 
 Huge thanks to the [Shields.io](https://shields.io) team for their amazing API that powers this badge generator.
-
-## 🚀 Try it out
-
-👉 [My Custom Badge](https://joao-carmassi.github.io/my-custom-badge/) 
